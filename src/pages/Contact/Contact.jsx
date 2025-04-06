@@ -48,16 +48,6 @@ const Contact = () => {
 		});
 	};
 
-	// const handleOnSubmit = (e) => {
-	// 	e.preventDefault();
-	// 	emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
-	// 	  .then(() => {
-	// 		alert('Message Sent Successfully')
-	// 	  }, () => {
-	// 		alert('Something went wrong!')
-	// 	  });
-	// 	e.target.reset()
-	//   };
 	return (
 		<main className="contact">
 			<section className="contact-container" data-aos="zoom-in">

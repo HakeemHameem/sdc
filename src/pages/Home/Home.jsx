@@ -10,8 +10,6 @@ import Row, { Col } from "../../Layout/Responsive";
 import Card from "../../components/Card/Card";
 import GlobalContext from "../../Context/GlobalContext";
 import { office } from "../../utils/team";
-import progothon from "../../images/progothon-intro-bg.jpg";
-import progothonIcon from "../../images/progothon-icon.png";
 import MaterialIcons from "../../components/MaterialIcons";
 
 const Home = () => {

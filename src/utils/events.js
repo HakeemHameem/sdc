@@ -1,11 +1,6 @@
-import meraki from "../images/meraki.png";
-import merakiBG from "../images/meraki.jpg";
-// import skillabhyudaya from "../images/skillabhyudaya.png";
 import skillabhyudayaBG from "../images/bkl.jpg";
 import Abstract from "../images/Abstract.jpg";
 import Bgmi from "../images/bgmi.jpg";
-// import progothon from "../images/progothon.png";
-import progothonBG from "../images/progothon.jpg";
 import card1 from "../images/cdfu.jpg"
 import card2 from "../images/cdfu1.jpg"
 import card3 from "../images/royalrum.jpg"
