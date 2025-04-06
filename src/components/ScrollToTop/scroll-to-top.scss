@@ -1,0 +1,17 @@
+.scroll-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	border-radius: 500px;
+	width: 3rem;
+	height: 3rem;
+	background-color: var(--indigo);
+	color: var(--bgcolor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all var(--transition-time) ease-in-out;
+	&:hover {
+		background-color: var(--indigo-700);
+	}
+}

@@ -1,0 +1,31 @@
+.about {
+	&-faq {
+        &-li{
+            margin: 1rem auto;
+            width: fit-content;
+        }
+		&-hr {
+			width: 100%;
+			border: none;
+			height: 1px;
+			margin: 0.5rem 0 0 0;
+			// position: relative;
+			background-image: linear-gradient(
+				to right,
+				#f0f0f0,
+				#8f8f8f,
+				#f0f0f0
+			);
+			&::after {
+				content: "§";
+				display: inline-block;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%, -50%) rotate(60deg);
+				transform-origin: 50% 50%;
+				padding: 1rem;
+				// background-color: white;
+			}
+		}
+	}
+}

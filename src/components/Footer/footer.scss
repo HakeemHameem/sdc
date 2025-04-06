@@ -1,0 +1,190 @@
+@import "../../config";
+.footer {
+	width: 100vw;
+	height: 45rem;
+	margin-top: 3rem;
+	padding: 3rem 10vw 0 10vw;
+	background-color: rebeccapurple;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--white);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #2e3141;
+	background-attachment: fixed;
+	overflow: hidden;
+	@include respond(phone) {
+		padding: 1rem;
+	}
+	&-head {
+		width: 80%;
+		margin: 0 auto;
+		font-size: 2.5rem;
+		line-height: 2.75rem;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.65);
+		padding-bottom: 1rem;
+		margin: 1rem 0 2rem 0;
+	}
+	&-body {
+		width: 80%;
+		height: 35rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include respond(phone) {
+			flex-flow: column;
+		}
+		&-left {
+			width: 50%;
+			height: 100%;
+			@include respond(phone) {
+				width: 100%;
+				height: 75%;
+			}
+			form {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				flex-flow: column;
+				padding-top: 1rem;
+				input,
+				textarea {
+					width: 75%;
+					padding: 0.75rem 1rem;
+					margin-top: 1rem;
+					border: 1px solid rgba(255, 255, 255, 0.65);
+					color: var(--white);
+					@include respond(phone) {
+						width: 100%;
+					}
+				}
+				button {
+					width: 75%;
+					margin: 1rem 0;
+					font-family: var(--font-regular);
+					background-color: transparent;
+					color: var(--white);
+					@include respond(phone) {
+						width: 100%;
+					}
+				}
+			}
+		}
+		&-right {
+			width: 50%;
+			height: 100%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-flow: column;
+			@include respond(phone) {
+				width: 100%;
+				height: 25%;
+				flex-flow: row;
+				justify-content: center;
+				align-items: center;
+			}
+			&-social {
+				display: inline-flex;
+				justify-content: flex-start;
+				align-items: center;
+				@include respond(phone) {
+					justify-content: center;
+					align-items: center;
+				}
+				margin: 1rem 0;
+				a {
+					width: fit-content;
+					padding: 0 1rem 0 0;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					vertical-align: middle;
+					-webkit-transform: perspective(1px) translateZ(0);
+					transform: perspective(1px) translateZ(0);
+					box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+					position: relative;
+					overflow: hidden;
+					@include respond(phone) {
+						justify-content: center;
+						padding: 0.5rem 1rem;
+					}
+					&:before {
+						content: "";
+						position: absolute;
+						z-index: -1;
+						left: 51%;
+						right: 51%;
+						bottom: 0;
+						background: rgba(255, 255, 255, 0.65);
+						height: 1px;
+						-webkit-transition-property: left, right;
+						transition-property: left, right;
+						-webkit-transition-duration: 0.3s;
+						transition-duration: 0.3s;
+						-webkit-transition-timing-function: ease-out;
+						transition-timing-function: ease-out;
+					}
+					&:hover:before {
+						left: 0;
+						right: 0;
+					}
+				}
+				&__icon {
+					margin: 1rem 1rem 1rem 0rem;
+					width: 2.5rem;
+					height: 2.5rem;
+					padding: 0.5rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					@include respond(phone) {
+						margin: 0.5rem;
+					}
+				}
+				&__linktext {
+					height: 100%;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					margin-right: 1.5rem;
+					@include respond(phone) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	&-foot {
+		width: 100%;
+		height: 5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-top: 1px solid rgba(255, 255, 255, 0.65);
+		&-made {
+			@include respond(phone) {
+				display: none;
+			}
+		}
+		&-nav {
+			a {
+				margin-left: 2rem;
+				@include respond(phone){
+					margin: 0 0.5rem;
+				}
+			}
+			@include respond(phone) {
+				width: 100%;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				padding: 1rem;
+			}
+		}
+	}
+}

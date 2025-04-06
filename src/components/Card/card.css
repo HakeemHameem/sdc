@@ -1,0 +1,91 @@
+.card {
+  width: 20rem;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-radius: 16px;
+  margin: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1.5rem;
+  background-color: var(--light-blue-100);
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.card-bubble {
+  content: "";
+  position: absolute;
+  border-radius: 500px;
+}
+.card-bubble-1 {
+  top: 0;
+  right: 0;
+  width: 12.5rem;
+  height: 12.5rem;
+  transform: translate(50%, -50%);
+  z-index: 3;
+  background-color: var(--light-blue-700);
+}
+.card-bubble-2 {
+  top: 8.5rem;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+  z-index: 2;
+  transform: translate(50%, -100%);
+  background-color: var(--light-blue);
+}
+.card-image {
+  width: 8.5rem;
+  height: 8.5rem;
+  margin: 2rem 0;
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
+}
+.card-content {
+  width: 100%;
+  overflow: hidden;
+}
+.card-name {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: var(--font-bold);
+}
+.card-title {
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+}
+.card-status {
+  width: 95%;
+  margin: 0.5rem 0;
+  font-size: 0.9125rem;
+  line-height: 1.25rem;
+}
+.card-socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem 0 0.5rem 0;
+}
+.card-socials a {
+  margin: 0 0.25rem;
+  border-radius: 500px;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-socials a:hover {
+  background-color: var(--back-shadow-light);
+}
+
+/*# sourceMappingURL=card.css.map */
